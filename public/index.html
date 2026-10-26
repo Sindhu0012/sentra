@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span> SENTRA</div>
+  <div class="tag">Hacks your AI agent. Fixes it. Proves the fix works.</div>
+</header>
+<main>
+  <section class="panel">
+    <h2>Target</h2>
+    <div class="kv"><span>Agent</span><b>Aria, office assistant</b></div>
+    <div class="kv"><span>Agent model</span><b>Nemotron 3 Nano 30B</b></div>
+    <div class="kv"><span>Tools</span><b>list_files, read_document, send_email, delete_file</b></div>
+    <div class="kv"><span>Attacks</span><b>Prompt injection, prompt extraction, tool-scope abuse</b></div>
+    <div class="kv"><span>Analyst model</span><b>Nemotron 3 Ultra 550B</b></div>
+    <div class="kv"><span>Judge</span><b>Fixed rules on the tool-call log</b></div>
+    <button id="run">Run Sentra scan</button>
+    <button id="patch" class="alt" disabled>Patch and re-test</button>
+    <p class="note">Sentra only attacks its own sandbox agent. All tools are fake: nothing is really emailed or deleted.</p>
+  </section>
+  <section class="panel">
+    <h2>Live attack log</h2>
+    <div id="phase" class="phase">Ready.</div>
+    <div id="log" class="log"></div>
+  </section>
+  <section class="panel">
+    <h2>Security score</h2>
+    <div id="scores" class="scores">
+      <div class="scorebox"><small>BEFORE</small><div id="sBefore" class="big">--</div></div>
+      <div class="arrow" id="arrow" hidden>&rarr;</div>
+      <div class="scorebox" id="afterBox" hidden><small>AFTER</small><div id="sAfter" class="big">--</div></div>
+    </div>
+    <div id="patchInfo" class="patchinfo" hidden></div>
+    <div id="cards"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
