@@ -12,7 +12,7 @@ Sentra is an automated red-team tool for AI agents. It attacks an agent with rea
 
 Built for the **Nebius x NVIDIA Global AI Hackathon** (Best Apps and Agents track).
 
-**Live demo:** LIVE_DEMO_URL_HERE
+**Live demo:**(https://sentra-pd2r.onrender.com/)
 **Demo video:** DEMO_VIDEO_URL_HERE
 
 ![Sentra overview: security score before and after the patch](docs/overview.png)
