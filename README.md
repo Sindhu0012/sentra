@@ -1,5 +1,4 @@
-mkdir -p docs
-cat > README.md <<'EOF'
+
 # Sentra
 
 **Hack your AI agent. Fix it. Prove it.**
